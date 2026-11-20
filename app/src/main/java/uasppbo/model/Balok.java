@@ -19,5 +19,7 @@ public class Balok extends Object3D{
     }
 
     @Override
-    public double
+    public double hitungVolume(){
+        return panjang * lebar * tinggi;
+    }
 }
