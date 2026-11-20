@@ -12,6 +12,6 @@ public abstract class Object3D extends GObject {
 
     @Override 
     public String[][] getKeyValueDetails(){
-
+        return ["label"][getLabel()];
     }
 }

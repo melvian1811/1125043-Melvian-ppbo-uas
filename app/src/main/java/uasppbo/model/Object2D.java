@@ -12,7 +12,7 @@ public abstract class Object2D extends GObject {
 
     @Override
     public String[][] getKeyValueDetails(){
-        return ["label",getLabel()];
+        return ["label"][getLabel()];
     }
 
 
