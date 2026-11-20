@@ -3,6 +3,7 @@ package uasppbo.model;
 public abstract class GObject {
     
     private String label;
+    
 
     public String getLabel(){
         return label;
