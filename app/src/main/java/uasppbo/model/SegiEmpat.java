@@ -2,10 +2,21 @@ package uasppbo.model;
 
 public class SegiEmpat extends Object2D{
     
-    public abstract double hitungLuas();
+    private double panjang;
+    private double lebar;
 
-    public abstract double hitungKeliling();
+    public SegiEmpat(String label, double panjang, double lebar){
+        super(label);
+        this.panjang = panjang;
+        this.lebar = lebar;
+    }
+
+    public double hitungKeliling(){
+        return 2 * (panjang + lebar);
+    }
 
     @Override
-    public
+    public double hitungLuas() {
+        return panjang * lebar;
+    }
 }
